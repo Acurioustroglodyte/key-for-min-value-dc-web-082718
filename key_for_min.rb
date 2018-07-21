@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   all_values = []
   name_hash.each_key { |key| all_values << key.to_s }
   all_values.each do |value|
-    if value.size < smallest
+    if value.size < smallest.size
       smallest = value
     end
     smallest
