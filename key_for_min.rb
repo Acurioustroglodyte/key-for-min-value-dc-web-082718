@@ -8,7 +8,13 @@ def key_for_min_value(name_hash)
   smallest = Float::INFINITY
   all_values = []
   name_hash.each_key { |key| all_values << key.to_s }
-
+  all_values.each do |value|
+    if value < smallest
+      smallest = value
+    end
+    smallest
+  end
+  all_values.index_of(smallest)
 end
 
 # Test data:
