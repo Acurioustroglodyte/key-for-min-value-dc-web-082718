@@ -14,8 +14,9 @@ def key_for_min_value(name_hash)
 
   name_hash.each do |key, value|
 
-  # If smallest == {}, smallest = {key => value}
-
+  # If smallest is {}, smallest equals key/value pair
+  if smallest == {}
+    smallest = {key => value}
   # If pair[value] is less than smallest[saved_key], smallest equals pair and saved_key equals pair[key]
   if value < smallest
   # Return smallest[saved_key] after loop execution
