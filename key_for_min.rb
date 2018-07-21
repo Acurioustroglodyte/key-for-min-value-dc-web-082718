@@ -6,7 +6,7 @@ def key_for_min_value(name_hash)
     return nil
   end
 
-  smallest = {init => 1000000000000}
+  smallest = {:init => 1000000000000}
   saved_key = :init
 
   name_hash.each do |key, value|
