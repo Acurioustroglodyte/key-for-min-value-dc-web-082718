@@ -6,6 +6,12 @@ def key_for_min_value(name_hash)
     return nil
   end
 
+  # Initialize smallest to test key and largest possible value
+  # Intialize saved_key to test key
+  # For each pair in hash
+  # If pair[value] is less than smallest[saved_key], smallest equals pair and saved_key equals pair[key]
+  # Return smallest[saved_key] after loop exe
+  
   smallest = {:init => 1000000000000}
   saved_key = :init
 
