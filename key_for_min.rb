@@ -10,13 +10,13 @@ def key_for_min_value(name_hash)
   saved_key = :init
 
   name_hash.each do |key, value|
-  if smallest == {}
-    smallest = {key => value}
-  elsif value < smallest[saved_key]
-    smallest = {key => value}
-    saved_key = key
+    if smallest == {}
+      smallest = {key => value}
+    elsif value < smallest[saved_key]
+      smallest = {key => value}
+      saved_key = key
+    end
   end
-end
   saved_key
 end
 
