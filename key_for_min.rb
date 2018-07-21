@@ -5,10 +5,10 @@ def key_for_min_value(name_hash)
   if name_hash == nil || name_hash.size == 0
     return nil
   end
-  
-  smallest = {}
-  saved_key = 1000000000000
-  
+
+  smallest = {init => 1000000000000}
+  saved_key = :init
+
   name_hash.each do |key, value|
   if smallest == {}
     smallest = {key => value}
