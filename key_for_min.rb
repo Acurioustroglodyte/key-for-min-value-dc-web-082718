@@ -16,6 +16,7 @@ def key_for_min_value(name_hash)
     smallest = {key => value}
     saved_key = key
   end
+end
   saved_key
 end
 
