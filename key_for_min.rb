@@ -22,8 +22,10 @@ def key_for_min_value(name_hash)
   elsif value < smallest[saved_key]
     smallest = {key => value}
     saved_key = key
-  # Return smallest[saved_key] after loop execution
   end
+
+  # Return smallest[saved_key] after loop execution
+  saved_key
 end
 
 # Test data:
