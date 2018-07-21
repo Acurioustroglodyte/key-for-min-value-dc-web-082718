@@ -9,7 +9,7 @@ def key_for_min_value(name_hash)
   smallest = {}
 
   # Intialize saved_key
-  saved_key = nil
+  saved_key = 1000000000000
   # For each pair in hash
 
   name_hash.each do |key, value|
