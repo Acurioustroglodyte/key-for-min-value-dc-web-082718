@@ -28,7 +28,5 @@ def key_for_min_value(name_hash)
   saved_key
 end
 
-# Test data:
-data = {:blake => 500, :ashley => 2, :adam => 1}
-# Test call:
-key_for_min_value(data)
+# Test data: data = {:blake => 500, :ashley => 2, :adam => 1}
+# Test call: key_for_min_value(data)
