@@ -17,9 +17,13 @@ def key_for_min_value(name_hash)
   # If smallest is {}, smallest equals key/value pair
   if smallest == {}
     smallest = {key => value}
+
   # If pair[value] is less than smallest[saved_key], smallest equals pair and saved_key equals pair[key]
-  if value < smallest
+  elsif value < smallest[saved_key]
+    smallest = {key => value}
+    saved_key = key
   # Return smallest[saved_key] after loop execution
+  end
 end
 
 # Test data:
